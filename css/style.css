@@ -96,7 +96,7 @@ ul {
 
 .section .container {
     padding-top: 60px;
-    padding-bottom: 70px;
+    padding-bottom: 10px;
 }
 
 .section-title {
@@ -532,7 +532,7 @@ h3.my-profession {
 .portfolio .portfolio-item {
     flex: 0 0 33.33%;
     max-width: 33.33%;
-    padding: 30px;
+    padding: 10px;
 }
 
 .portfolio .portfolio-item-inner {
@@ -642,6 +642,28 @@ h3.my-profession {
     padding: 0 50px;
 }
 
+
+
+@media (min-width: 1599px) {
+
+    .aside.open {
+        left: 0;
+    }
+
+    .section {
+        left: 0;
+    }
+
+    .home .home-img {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .home .home-info {
+        flex: 0 0 100%;
+    }
+}
+
 @media (max-width: 1199px) {
 
     .section .container {
@@ -658,11 +680,12 @@ h3.my-profession {
 
     .aside .nav-toggler {
         display: flex;
+        top: 30px;
         left: 30px;
     }
 
     .aside .nav-toggler.open {
-        left: 300px;
+        left: 270px;
     }
 
     .section {
@@ -677,6 +700,8 @@ h3.my-profession {
         display: block;
         margin-left: 0;
     }
+
+
 }
 
 @media (max-width: 991px) {
@@ -696,6 +721,8 @@ h3.my-profession {
     .home .home-img {
         display: none;
     }
+
+
 }
 
 @media (max-width: 767px) {
@@ -707,5 +734,9 @@ h3.my-profession {
     .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    #myInfo {
+        flex-direction: column;
     }
 }
