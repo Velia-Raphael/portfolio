@@ -6,10 +6,12 @@ styleSwitcher.addEventListener('click', () => {
 
 // hide style - switcher on scroll
 window.addEventListener('scroll', () => {
-    if (document.querySelector('.style-switcher').classList.contains('open')) {
-        document.querySelector('.style-switcher').classList.remove('open');
+    const styleSwitcher = document.querySelector('.style-switcher');
+    if (styleSwitcher.classList.contains('open')) {
+        styleSwitcher.classList.remove('open');
+        styleSwitcher.style.display = 'none';
     }
-})
+});
 /*==================== theme colors ====================*/
 const alternateStyles = document.querySelectorAll('.alternate-style');
 function setActiveStyle(color) {

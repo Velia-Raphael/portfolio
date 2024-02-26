@@ -1,0 +1,243 @@
+/* global CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500&display=swap');
+/**font-family: 'Readex Pro', sans-serif;**/
+
+/*Partie haute de la page*/
+#Start {
+    font-family: 'Readex Pro', sans-serif;
+    background-color: #93797d;
+}
+
+header {
+    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 3rem;
+    width: 90%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.625rem;
+}
+
+#connexion {
+    color: black;
+    font-size: medium;
+}
+
+#connexion:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#Accueil:hover {
+    color: white;
+    background-color: #b39cd8;
+}
+
+#Accueil {
+    border: black solid 0.125rem;
+    background-color: #a688d8;
+    border-radius: 0.313rem;
+    padding: 2rem 3rem;
+    margin: 3rem;
+    font-size: medium;
+}
+
+#PESTEL:hover {
+    color: white;
+    background-color: rgb(216, 165, 89);
+}
+
+#PESTEL {
+    border: black solid 0.125rem;
+    background-color: #ce9d35;
+    border-radius: 0.313rem;
+    padding: 2rem 2.5rem;
+    margin: 15rem;
+    font-size: medium;
+}
+
+#AboutUs:hover {
+    color: white;
+    background-color: rgb(216, 165, 89);
+}
+
+#AboutUs {
+    border: black solid 0.125rem;
+    background-color: #ce9d35;
+    border-radius: 0.313rem;
+    padding: 2rem 2.5rem;
+    margin: 3rem;
+    font-size: medium;
+}
+
+/* Milieu */
+
+#milieu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#milieu h1 {
+    padding: 2rem;
+}
+
+p {
+    padding: 3rem;
+}
+
+#milieu h4 {
+    padding: 2rem;
+    text-decoration: underline;
+    color: rgb(112, 117, 112);
+}
+
+#flex-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-box {
+    width: 40rem;
+    height: 25rem;
+    background: white;
+    border: 0.125rem solid black;
+    color: black;
+    font-size: 1.563rem;
+    text-align: center;
+    line-height: 2.7rem;
+    border-radius: 1.25rem;
+    margin: 0.625rem;
+    background: linear-gradient(white, rgb(202, 198, 186));
+}
+
+/* Footer */
+
+#End {
+    margin-top: 13.3rem;
+    font-family: 'Readex Pro', sans-serif;
+    background-color: grey;
+}
+
+footer {
+    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+    width: 90%;
+}
+
+#Infos {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 0.625rem;
+    align-items: center;
+}
+
+#Contact {
+    color: black;
+    margin: 2rem;
+    font-size: medium;
+}
+
+#Contact:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#Mentions {
+    color: black;
+    margin: 2rem;
+    font-size: medium;
+}
+
+#Mentions:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#Réseaux {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+    padding: 0.625rem;
+    align-items: center;
+}
+
+#Réseaux a {
+    color: black;
+    margin: 3rem;
+    font-size: medium;
+}
+
+#Réseaux a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    #PESTEL {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem;
+    }
+
+    #connexion {
+        margin: 3rem;
+        display: flex;
+    }
+
+    #Start {
+        height: 26rem;
+    }
+
+    #Réseaux a {
+        margin: 1.7rem;
+    }
+}
